@@ -1,5 +1,14 @@
 # sessionstorage
 
+[![Made by unshift][made-by]](http://unshift.io)[![Version npm][version]](http://browsenpm.org/package/sessionstorage)[![Build Status][build]](https://travis-ci.org/unshiftio/sessionstorage)[![Dependencies][david]](https://david-dm.org/unshiftio/sessionstorage)[![Coverage Status][cover]](https://coveralls.io/r/unshiftio/sessionstorage?branch=master)[![IRC channel][irc]](http://webchat.freenode.net/?channels=unshift)
+
+[made-by]: https://img.shields.io/badge/made%20by-unshift-00ffcc.svg?style=flat-square
+[version]: https://img.shields.io/npm/v/sessionstorage.svg?style=flat-square
+[build]: https://img.shields.io/travis/unshiftio/sessionstorage/master.svg?style=flat-square
+[david]: https://img.shields.io/david/unshiftio/sessionstorage.svg?style=flat-square
+[cover]: https://img.shields.io/coveralls/unshiftio/sessionstorage/master.svg?style=flat-square
+[irc]: https://img.shields.io/badge/IRC-irc.freenode.net%23unshift-00a8ff.svg?style=flat-square
+
 The `sessionStorage` API is amazing and super useful when you need to store data
 temporarily in the browser. We used to abuse cookies for this, but not all the
 data that you want to store needs to be synced with the server. The
