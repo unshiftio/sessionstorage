@@ -10,7 +10,7 @@ module.exports = (function store() {
     var storage = require('window.name')
       , koekje = require('koekje');
 
-    return storage.support ? storage : (koekje.supported ? koekje : {
+    return storage.supported ? storage : (koekje.supported ? koekje : {
       length: 0,
       getItem: nope, setItem: nope, removeItem: nope, clear: nope
     });
