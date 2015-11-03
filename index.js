@@ -6,6 +6,7 @@ module.exports = (function store() {
   try {
     sessionStorage.setItem('foo', 'bar');
     if (sessionStorage.getItem('foo') !== 'bar') throw 1;
+    sessionStorage.removeItem('foo');
   } catch (e) {
     var storage = require('window.name')
       , koekje = require('koekje');
