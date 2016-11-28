@@ -1,6 +1,6 @@
 {
   "name": "sessionstorage",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "sessionStorage API which gracefully degrades to window.name & cookies when not available",
   "main": "index.js",
   "scripts": {
