@@ -1,6 +1,6 @@
 {
   "name": "sessionstorage",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "sessionStorage API which gracefully degrades to window.name & cookies when not available",
   "main": "index.js",
   "scripts": {
@@ -27,14 +27,14 @@
   },
   "homepage": "https://github.com/unshiftio/sessionstorage",
   "devDependencies": {
-    "assume": "~1.5.0",
-    "istanbul": "0.4.x",
-    "mocha": "~3.5.0",
-    "pre-commit": "~1.2.0"
+    "assume": "^2.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.1.1",
+    "pre-commit": "^1.2.2"
   },
   "dependencies": {
-    "koekje": "~0.1.0",
+    "koekje": "^0.1.0",
     "objstorage": "^1.0.0",
-    "window.name": "0.0.x"
+    "window.name": "^0.0.3"
   }
 }
