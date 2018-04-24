@@ -8,13 +8,11 @@ module.exports = (function store() {
     if (sessionStorage.getItem('foo') !== 'bar') throw 1;
     sessionStorage.removeItem('foo');
   } catch (e) {
-    var storage = require('window.name')
+    var objstorage = require('objstorage')
+      , storage = require('window.name')
       , koekje = require('koekje');
 
-    return storage.supported ? storage : (koekje.supported ? koekje : {
-      length: 0,
-      getItem: nope, setItem: nope, removeItem: nope, clear: nope
-    });
+    return storage.supported ? storage : (koekje.supported ? koekje : objstorage);
   }
 
   return sessionStorage;

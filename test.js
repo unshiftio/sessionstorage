@@ -15,4 +15,22 @@ describe('sessionStorage', function () {
     assume(sessionStorage.clear).is.a('function');
     assume(sessionStorage.length).is.a('number');
   });
+
+  it('works as intended', function () {
+    sessionStorage.setItem('foo', 'bar');
+    assume(sessionStorage.length).equals(1);
+    assume(sessionStorage.getItem('foo')).equals('bar');
+
+    sessionStorage.setItem('hello', 'world');
+    assume(sessionStorage.length).equals(2);
+    assume(sessionStorage.getItem('hello')).equals('world');
+
+    sessionStorage.removeItem('hello');
+    assume(sessionStorage.length).equals(1);
+    assume(sessionStorage.getItem('hello')).is.a('null');
+    assume(sessionStorage.getItem('foo')).equals('bar');
+
+    sessionStorage.clear();
+    assume(sessionStorage.length).equals(0);
+  });
 });
