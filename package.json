@@ -35,6 +35,6 @@
   "dependencies": {
     "koekje": "^0.1.0",
     "objstorage": "^1.0.0",
-    "window.name": "^0.0.3"
+    "window.name": "^0.0.4"
   }
 }
